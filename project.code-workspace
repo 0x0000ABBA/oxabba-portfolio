@@ -30,10 +30,10 @@
   },
   "extensions": {
     "recommendations": [
+      "eamodio.gitlens",
       "formulahendry.auto-rename-tag",
       "editorconfig.editorconfig",
-      "joshx.workspace-terminals",
-      "eamodio.gitlens"
+      "joshx.workspace-terminals"
     ]
   }
 }

@@ -1,0 +1,45 @@
+{
+  "name": "frontend",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@vkontakte/icons": "^1.200.0",
+    "@vkontakte/vk-bridge": "^2.7.0",
+    "elum-state": "^0.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-lottie": "^1.2.6",
+    "@vitejs/plugin-legacy": "^3.0.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "prop-types": "^15.8.1",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "terser": "^5.15.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-checker": "^0.5.1",
+    "vite-plugin-dynamic-import": "^1.2.3",
+    "vite-plugin-eruda": "^1.0.1",
+    "vite-tsconfig-paths": "^3.5.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

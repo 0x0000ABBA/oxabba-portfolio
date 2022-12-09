@@ -32,7 +32,8 @@
     "recommendations": [
       "formulahendry.auto-rename-tag",
       "editorconfig.editorconfig",
-      "joshx.workspace-terminals"
+      "joshx.workspace-terminals",
+      "eamodio.gitlens"
     ]
   }
 }

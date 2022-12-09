@@ -6,6 +6,6 @@
     ],
     "scripts": {
         "start:backend": "yarn workspace backend dev",
-        "start:frontend": "yarn workspace frontend dev"
+        "start:frontend": "yarn workspace frontend start"
     }
 }

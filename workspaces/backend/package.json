@@ -1,0 +1,23 @@
+{
+    "name": "backend",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "nodemon",
+        "production": "ts-node --transpile-only --require tsconfig-paths/register src/index.ts"
+    },
+    "nodemonConfig": {
+        "watch": [
+            "src"
+        ],
+        "ext": "ts,json",
+        "exec": "ts-node-dev -r tsconfig-paths/register src/index.ts"
+    },
+    "devDependencies": {
+        "@types/node": "latest",
+        "cross-env": "latest",
+        "nodemon": "latest",
+        "ts-node-dev": "latest",
+        "tsconfig-paths": "latest",
+        "typescript": "latest"
+    }
+}

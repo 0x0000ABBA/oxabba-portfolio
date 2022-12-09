@@ -1,0 +1,38 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": " "
+    },
+    {
+      "path": "workspaces/frontend",
+      "name": "⚪️ FRONTEND"
+    },
+    {
+      "path": "workspaces/backend",
+      "name": "⚪️ BACKEND"
+    }
+  ],
+  "settings": {
+    "workspace-terminals.auto": "always",
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.indentSize": "tabSize",
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": false,
+    "files.exclude": {
+      "**/node_modules/": true,
+      "yarn.lock": true,
+      ".gitignore": true,
+      ".editorconfig": true,
+      "package-lock.json": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "formulahendry.auto-rename-tag",
+      "editorconfig.editorconfig",
+      "joshx.workspace-terminals"
+    ]
+  }
+}

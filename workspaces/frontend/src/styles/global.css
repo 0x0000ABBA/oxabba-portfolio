@@ -1,3 +1,18 @@
+body {
+  --background-color-primary: #0f140a;
+  --background-color-glow: rgb(37, 11, 61);
+  --font-color-primary: blueviolet;
+  --font-family: Consolas,monaco,monospace;
+
+  --font-size-main: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
 html {
     display: block;
     position: fixed;
@@ -14,7 +29,7 @@ body {
     padding: 0;
     width: 100vw;
     min-width: 320px;
-    background: var(--background);
+    background-color: var(--background-color-primary);
     font-family: var(--font-common);
     pointer-events: painted;
     touch-action: none;
@@ -42,20 +57,3 @@ span {
     user-select: none;
 }
 
-@supports (padding-top: constant(safe-area-inset-top)) {
-    :root {
-        --safe-area-inset-top: constant(safe-area-inset-top);
-        --safe-area-inset-right: constant(safe-area-inset-right);
-        --safe-area-inset-bottom: constant(safe-area-inset-bottom);
-        --safe-area-inset-left: constant(safe-area-inset-left);
-    }
-}
-
-@supports (padding-top: env(safe-area-inset-top)) {
-    :root {
-        --safe-area-inset-top: env(safe-area-inset-top);
-        --safe-area-inset-right: env(safe-area-inset-right);
-        --safe-area-inset-bottom: env(safe-area-inset-bottom);
-        --safe-area-inset-left: env(safe-area-inset-left);
-    }
-}

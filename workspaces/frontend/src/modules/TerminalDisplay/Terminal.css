@@ -1,0 +1,38 @@
+.Terminal {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Terminal__char {
+  animation-name: animate-text;
+  animation-iteration-count: 1;
+  animation-duration: .25s;
+  animation-fill-mode: both;
+}
+
+.Spread {
+  flex: 1 1 100%;
+}
+
+.Terminal__char:after {
+  position: absolute;
+  content: "";
+  -webkit-box-shadow: 0 0 20px var(--font-color-primary);
+  box-shadow: 0 0 20px var(--font-color-primary);
+  width: calc(var(--font-size-main) / 4);
+  height: calc(var(--font-size-main) / 2);
+}
+
+@keyframes animate-text {
+
+  0% {
+    background-color: var(--font-color-primary);
+    opacity: 0;
+  }
+
+
+  100% {
+    color: var(--font-color-primary);
+  }
+}

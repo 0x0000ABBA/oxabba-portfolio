@@ -1,0 +1,51 @@
+.TerminalInput {
+  color: var(--font-color-primary);
+}
+
+.TerminalInput__display::before {
+  content: "seregavspb> ";
+}
+
+.TerminalInput input {
+  opacity: 0;
+  position: absolute;
+  
+}
+
+.TerminalInput__char:after {
+  position: absolute;
+  content: "";
+  -webkit-box-shadow: 0 0 20px var(--font-color-primary);
+  box-shadow: 0 0 20px var(--font-color-primary);
+  width: calc(var(--font-size-main) / 4);
+  height: calc(var(--font-size-main) / 2);
+}
+
+.TerminalInput__char-caret {
+  animation-name: bg-text-blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg-text-blink {
+
+  0% {
+    background-color: var(--font-color-primary);
+    color: var(--background-color-primary);
+  }
+
+  47% {
+    background-color: var(--font-color-primary);
+    color: var(--background-color-primary);
+  }
+
+  53% {
+    background-color: var(--background-color-primary);
+    color: var(--font-color-primary);
+  }
+
+  100% {
+    background-color: var(--background-color-primary);
+    color: var(--font-color-primary);
+  }
+}

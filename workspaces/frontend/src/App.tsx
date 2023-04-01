@@ -1,9 +1,17 @@
-import { FC, HTMLAttributes } from "react";
+import { CenteredContainer, Display } from "components";
+import Terminal from "modules/TerminalDisplay/Terminal";
+import { FC, HTMLAttributes, useState } from "react";
 
-interface IApp extends HTMLAttributes<HTMLDivElement> { }
+interface IApp extends HTMLAttributes<HTMLDivElement> {
+
+}
 
 const App: FC<IApp> = () => {
-  return (<div>Hello World</div>)
+
+  return (
+   <CenteredContainer><Display leftColumn={<Terminal/>} rightColumn={<Terminal/>}/></CenteredContainer>
+
+  )
 }
 
 export default App;
